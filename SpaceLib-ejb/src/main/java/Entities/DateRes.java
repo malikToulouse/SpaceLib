@@ -28,6 +28,7 @@ public class DateRes implements Serializable {
         return dateReservationA;
     }
 
+    
     public void setDateReservationA(Date dateReservationA) {
         this.dateReservationA = dateReservationA;
     }
