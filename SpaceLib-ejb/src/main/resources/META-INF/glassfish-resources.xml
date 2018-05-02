@@ -10,6 +10,6 @@
         <property name="URL" value="jdbc:derby://localhost:1527/SpaceLibBD"/>
         <property name="driverClass" value="org.apache.derby.jdbc.ClientDriver"/>
     </jdbc-connection-pool>
-    <jdbc-resource enabled="true" jndi-name="java:module/SLBD" object-type="user" pool-name="derby_net_SpaceLibBD_malikPool"/>
-    <jdbc-resource enabled="true" jndi-name="java:app/SpaceLibBD" object-type="user" pool-name="derby_net_SpaceLibBD_malikPool"/>
+    <jdbc-resource enabled="true" jndi-name="SLBD" object-type="user" pool-name="derby_net_SpaceLibBD_malikPool"/>
+    <jdbc-resource enabled="true" jndi-name="SpaceLibBD" object-type="user" pool-name="derby_net_SpaceLibBD_malikPool"/>
 </resources>

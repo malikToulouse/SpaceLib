@@ -17,7 +17,7 @@ import javax.persistence.PersistenceContext;
 @Stateless
 public class QuaiFacade extends AbstractFacade<Quai> implements QuaiFacadeLocal {
 
-    @PersistenceContext(unitName = "com.mycompany_SpaceLib-ejb_ejb_1.0-SNAPSHOTPU")
+    @PersistenceContext(unitName = "com.mycompany_SpaceLib-ejb_ejb_1.0-SNAPSHOTPU2")
     private EntityManager em;
 
     @Override

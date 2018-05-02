@@ -11,6 +11,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
@@ -52,11 +53,11 @@ public class Quai implements Serializable {
     private Long idQuai;
     
     @OneToOne
-    @Column(name = "IDNAVETTE")
+    @JoinColumn(name = "IDNAVETTE")
     private Navette navette;
     
     @ManyToOne
-    @Column(name = "IDSTATION")
+    @JoinColumn(name = "IDSTATION")
     private Station station;
     
     

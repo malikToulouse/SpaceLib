@@ -17,7 +17,7 @@ import javax.persistence.PersistenceContext;
 @Stateless
 public class DateRevFacade extends AbstractFacade<DateRev> implements DateRevFacadeLocal {
 
-    @PersistenceContext(unitName = "com.mycompany_SpaceLib-ejb_ejb_1.0-SNAPSHOTPU")
+    @PersistenceContext(unitName = "com.mycompany_SpaceLib-ejb_ejb_1.0-SNAPSHOTPU2")
     private EntityManager em;
 
     @Override

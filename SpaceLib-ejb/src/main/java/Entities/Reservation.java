@@ -13,6 +13,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.Size;
 
@@ -116,14 +117,14 @@ public class Reservation implements Serializable {
     private int nbPassager;
     
     @Size(max = 50)
-    @Column(name = "STATIOND")
+    @JoinColumn(name = "STATIOND")
     private Station stationD;
     
     @Size(max = 50)
-    @Column(name = "STATIONA")
+    @JoinColumn(name = "STATIONA")
     private Station stationA;
     
-    @Column(name = "STATIONA")
+    @Column(name = "DATERESERVATIONA")
     private Date dateReservationA;
 
 }

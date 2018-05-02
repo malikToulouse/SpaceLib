@@ -12,6 +12,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
@@ -48,15 +49,15 @@ public class Navette implements Serializable {
     private int nbPassagerMax;
 
     @OneToOne
-    @Column(name = "IDQUAI")
+    @JoinColumn(name = "IDQUAI")
     private Quai quai;
     
     @OneToMany
-    @Column(name = "IDREVISION")
+    @JoinColumn(name = "IDREVISION")
     private Collection<Revision> revision;
     
     @OneToMany
-    @Column(name = "IDRESRVATION")
+   @JoinColumn(name = "IDRESERVATION")
     private Collection<Reservation> reservation;
     
     
